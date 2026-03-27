@@ -14,8 +14,15 @@ PI2-CAR/
 │       ├── mqtt_modulo/        # Módulo de protocolo MQTT
 │       │   ├── mqtt_modulo.c   # Lógica de publicação/inscrição
 │       │   └── mqtt_modulo.h   # Definições do MQTT
+|       ├── sensor_generic/        # Módulo de protocolo MQTT
+│       │   ├── sensor_generic.c   # Lógica especifica do sensor
+│       │   └── sensor_generic.h   # Definição do sensor
+|       ├── atuador_generic/        # Módulo de protocolo MQTT
+│       │   ├── atuador_generic.c   # Lógica especifica do atuador
+│       │   └── atuador_generic.h   # Definição do atuador
 │   ├── main.c              # Funções de inicio e tasks
 │   ├── config.h            # Configurações globais do sistema
+│   ├── pin_config.h        # Disposição dos pinos utilizados
 │   └── CMakeLists.txt      # Instruções de compilação do componente main
 ├── build/                  # Arquivos binários gerados na compilação
 ```
