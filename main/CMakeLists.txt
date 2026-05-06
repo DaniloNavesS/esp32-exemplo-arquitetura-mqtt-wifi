@@ -1,7 +1,15 @@
 idf_component_register(SRCS "main.c"
                             "include/wifi_modulo/wifi_modulo.c"
                             "include/mqtt_modulo/mqtt_modulo.c"
+                            "include/hc_sr04_modulo/hc_sr04_modulo.c"
+                            "include/sg90_modulo/sg90_modulo.c"
+                            "include/mh_sensor_modulo/mh_sensor_modulo.c"
+                            "include/config.h"
                        PRIV_REQUIRES spi_flash esp_wifi nvs_flash esp_event mqtt driver
                        INCLUDE_DIRS "."
                                     "include/wifi_modulo"
-                                    "include/mqtt_modulo")
+                                    "include/mqtt_modulo"
+                                    "include/hc_sr04_modulo"
+                                    "include/sg90_modulo"
+                                    "include/mh_sensor_modulo"
+                                    "include")
